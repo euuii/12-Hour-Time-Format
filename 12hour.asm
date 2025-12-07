@@ -29,7 +29,7 @@ main proc
     ;tens hours
     mov ah, 01h
     int 21h
-    sub al, 30h     ;Turn string into integer
+    sub al, 30h     ;Convert input into ASCII
     mov bl, 10      ;Move 10 to bl
     mul bl          ;Multiply input from bl
     mov hours, al   ;Move input to "hours" variable
